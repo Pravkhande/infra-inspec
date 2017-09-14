@@ -1,0 +1,8 @@
+name: inspec-example
+title: inspec-example
+maintainer: preetika
+copyright: preetika
+copyright_email: preetika.ravkhande@reancloud.com.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
