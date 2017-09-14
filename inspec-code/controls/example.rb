@@ -17,3 +17,24 @@ control 'inspec-example' do                        # A unique ID for this contro
     it { should be_directory }
   end
 end
+
+describe windows_feature('DHCP Server') do
+  it { should be_installed }
+end
+
+describe file('C:\Windows') do
+ it { should be_directory }
+end
+
+describe user('Administrator') do
+  it { should exist }
+end
+
+describe package('Chefdk') do
+  it { should be_installed }
+  its('version') { should eq '1.19.2.1' }
+end
+
+describe port(80) do
+  it { should be_listening }
+end
