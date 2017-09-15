@@ -30,11 +30,15 @@ describe user('Administrator') do
   it { should exist }
 end
 
-describe package('Chefdk') do
+describe package('chefdk') do
   it { should be_installed }
   its('version') { should eq '1.19.2.1' }
 end
 
 describe port(80) do
   it { should be_listening }
+end
+
+describe file('C:\Program Files\Java\jdk1.8.0_144\bin\java.exe') do
+ it { should exist }
 end
