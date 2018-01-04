@@ -1,7 +1,7 @@
 # encoding: utf-8
 # copyright: 2015, The Authors
 
-title 'inspec-example'
+title 'inspec-code'
 
 # you can also use plain tests
 describe file('/tmp') do
